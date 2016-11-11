@@ -41,7 +41,7 @@ public class ObserverTest {
         List<Observer> observers = (List<Observer>) field.get(tProduct);
         field.setAccessible(false);
         Customer toCheck = (Customer) observers.get(0);
-        
+
         assertEquals(toCheck.getName(), testCustomer2);
     }
 }
